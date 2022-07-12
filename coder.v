@@ -14,16 +14,6 @@ reg data = 0;
 
 assign tmp = data_i - comp;
 assign data_o = tmp[15];
-//
-//always @(posedge clk_i)
-//	data <= data_o;
-
-//always @(posedge clk_i) 
-//if (!enable_i)
-//begin
-//	assign rst_i = 0;
-//	assign data_o = 0;
-//end
 
 decoder dec
 (
